@@ -1,0 +1,64 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &__brand {
+    display: inline-flex;
+    align-items: center;
+    line-height: 0;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  &__logo {
+    height: 28px;
+    width: auto;
+    display: block;
+  }
+
+  &__spacer {
+    flex: 1 1 auto;
+  }
+
+  &__user-name {
+    margin-left: 0.5rem;
+  }
+}
+
+.layout {
+  flex: 1 1 auto;
+
+  &__nav {
+    width: 240px;
+    border-right: 1px solid var(--mat-sys-outline-variant);
+  }
+
+  &__content {
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+}
+
+.user-menu__header {
+  line-height: 1.3;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.user-menu__name {
+  font-weight: 600;
+}
+.user-menu__role {
+  font: var(--mat-sys-body-small);
+  color: var(--mat-sys-on-surface-variant);
+}
